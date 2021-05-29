@@ -78,7 +78,7 @@ main {
   letter-spacing: 0.1rem;
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 69.375em) {
   main {
     display: grid;
     place-items: center;
@@ -87,14 +87,14 @@ main {
 
   .stat-container {
     display: flex;
-    height: 445px;
-    max-width: 1109px;
+    height: 27.8125rem;
+    max-width: 69.3125rem;
     flex-direction: row-reverse;
   }
 
   .image {
     background: #aa5cdb url(../images/image-header-desktop.jpg) center/cover no-repeat;
-    min-width: 539px;
+    min-width: 33.6875rem;
     height: 100%;
   }
 
