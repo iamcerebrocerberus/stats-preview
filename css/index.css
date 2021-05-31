@@ -36,10 +36,12 @@ main {
   padding: 2rem 2rem;
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 .previews__heading {
   font-family: inter, sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.9em;
 }
 .previews__heading span {
   color: #aa5cdb;
@@ -47,9 +49,11 @@ main {
 .previews__paragraph {
   font-family: "Lexend Deca", sans-serif;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 1rem;
-  line-height: 1.7rem;
+  margin-top: 1em;
+  line-height: 1.6;
   font-weight: lighter;
+  max-width: 35ch;
+  align-self: center;
 }
 
 .previews-stats {
@@ -57,25 +61,30 @@ main {
   display: flex;
   flex-direction: column;
 }
-.previews-stats ul {
-  margin-top: 1.5rem;
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5em;
 }
-.previews-stats ul li {
+ul li {
   list-style: none;
-  font-family: "inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
 }
-.previews-stats ul .number {
-  font-size: 1.7rem;
-  font-weight: 900;
-  color: white;
+ul li .number {
+  font-size: 1.5em;
+  font-weight: 700;
 }
-.previews-stats ul .about {
-  font-family: inter, sans-serif;
+ul li .about {
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
-  letter-spacing: 0.1rem;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  opacity: 0.6;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (min-width: 69.375em) {
@@ -117,14 +126,13 @@ main {
     padding: 0 2rem 0 0;
     font-weight: lighter;
     margin-top: 2rem;
+    max-width: 100%;
   }
 
-  .number {
-    font-size: 1.5rem !important;
-  }
-
-  .about {
-    font-size: 0.8rem !important;
+  ul {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
